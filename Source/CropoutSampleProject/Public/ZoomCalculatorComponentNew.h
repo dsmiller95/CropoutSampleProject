@@ -33,4 +33,12 @@ public:
 	UFUNCTION(BlueprintPure, meta=(DisplayName = "Get Float Value Fancy", ScriptName = "ZoomCalculatorComponent"), Category="Custom|Fancy")
 	static CROPOUTSAMPLEPROJECT_API float GetFancyCurveValue(UCurveFloat* curve, float fTime);
 
+	/**
+	 * Print a value. but fancy.
+	 * @param fValue					the number to print 
+	 * @return							nothing
+	 */
+	UFUNCTION(BlueprintCallable, meta=(DisplayName = "Priunt Value Fancy", ScriptName = "ZoomCalculatorComponent"), Category="Custom|Fancy")
+	static CROPOUTSAMPLEPROJECT_API void PrintFancy(float fValue);
+
 };
