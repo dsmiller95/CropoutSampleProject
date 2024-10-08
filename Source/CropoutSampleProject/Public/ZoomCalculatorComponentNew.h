@@ -30,7 +30,7 @@ public:
 	 * @param fTime						how long inside the curve to sample. 
 	 * @return							The fancy float value
 	 */
-	UFUNCTION(BlueprintCallable, meta=(DisplayName = "Get Float Value Fancy", ScriptName = "ZoomCalculatorComponent"), Category="Custom|Fancy")
+	UFUNCTION(BlueprintPure, meta=(DisplayName = "Get Float Value Fancy", ScriptName = "ZoomCalculatorComponent"), Category="Custom|Fancy")
 	static CROPOUTSAMPLEPROJECT_API float GetFancyCurveValue(UCurveFloat* curve, float fTime);
 
 };
