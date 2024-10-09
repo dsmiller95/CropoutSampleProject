@@ -31,7 +31,7 @@ public:
 	 * @return							The fancy float value
 	 */
 	UFUNCTION(BlueprintPure, meta=(DisplayName = "Get Float Value Fancy", ScriptName = "ZoomCalculatorComponent"), Category="Custom|Fancy")
-	static CROPOUTSAMPLEPROJECT_API float GetFancyCurveValue(UCurveFloat* curve, float fTime);
+	static CROPOUTSAMPLEPROJECT_API float GetFancyCurveValue(const UCurveFloat* curve, float fTime);
 
 	/**
 	 * Print a value. but fancy.
