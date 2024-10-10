@@ -5,16 +5,16 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Curves/CurveEvaluation.h"
-#include "ZoomCalculatorComponentNew.generated.h"
+#include "BlueprintCustomLibrary.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(ScriptName="CustomSystemLibrary"), MinimalAPI )
-class  UZoomCalculatorComponentNew : public UBlueprintFunctionLibrary
+class  UBlueprintCustomLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
 
 public:
-	UZoomCalculatorComponentNew();  // Base class constructor
+	UBlueprintCustomLibrary();  // Base class constructor
 	
 	UPROPERTY()
 	uint8 MyByteField1;

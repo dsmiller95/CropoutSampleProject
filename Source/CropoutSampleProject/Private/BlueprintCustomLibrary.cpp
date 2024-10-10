@@ -1,11 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-#include "ZoomCalculatorComponentNew.h"
+#include "BlueprintCustomLibrary.h"
 
 #include "Logging/StructuredLog.h"
 #include "Internationalization/Internationalization.h"
 
 // Sets default values for this component's properties
-UZoomCalculatorComponentNew::UZoomCalculatorComponentNew(const FObjectInitializer& ObjectInitializer)
+UBlueprintCustomLibrary::UBlueprintCustomLibrary(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 
@@ -13,7 +13,7 @@ UZoomCalculatorComponentNew::UZoomCalculatorComponentNew(const FObjectInitialize
 
 
 
-float UZoomCalculatorComponentNew::GetFancyCurveValue(const UCurveFloat* curve, float fTime)
+float UBlueprintCustomLibrary::GetFancyCurveValue(const UCurveFloat* curve, float fTime)
 {
 	
 	// if (!ensure(curve)) // Check if the curve is valid, otherwise log an error
@@ -30,7 +30,7 @@ float UZoomCalculatorComponentNew::GetFancyCurveValue(const UCurveFloat* curve, 
 	return curve->GetFloatValue(fTime);
 }
 
-void UZoomCalculatorComponentNew::PrintFancy(float fValue)
+void UBlueprintCustomLibrary::PrintFancy(float fValue)
 {
 	UE_LOGFMT(LogTemp, Display, "FANCY FLOAT HERE {Value}", fValue);
 }
